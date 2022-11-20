@@ -47,6 +47,13 @@ public class ArregloConJoptionPane {
             // Mas impares
             JOptionPane.showMessageDialog(null, "Se encontraron mas impares en el arreglo"
                     + "\nSe imprimira el logo de Microsoft");
+            JFrame ventana = new JFrame("Microsoft");
+            Microsoft objeto = new Microsoft();
+            ventana.add(objeto);
+            ventana.setSize(700, 700);
+            ventana.setLocationRelativeTo(null);
+            ventana.setVisible(true);
+            ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         } else {
             // Misma cantidad
             JOptionPane.showMessageDialog(null, "Se encontraron cantidades iguales de pares e impares en el arreglo"

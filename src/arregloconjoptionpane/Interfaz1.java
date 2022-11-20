@@ -8,11 +8,9 @@ import java.util.Random;
 
 public class Interfaz1 extends JPanel{
 
-    /**
-     *
-     * @param g
-     */
-    @Override
+  public Interfaz1 (){
+      setBackground(Color.WHITE);
+  }
     public void paint (Graphics g){
         Random random = new Random ();
         super.paint(g);
@@ -21,23 +19,23 @@ public class Interfaz1 extends JPanel{
             b = random.nextInt(255);
         Color colorAleatorio = new Color(r, f, b); 
 
-        g.drawOval(100, 50, 500, 500);
+        g.drawOval(100, 50, 500, 500); //Imprime el circulo de fondo
         //
-        g.setColor(colorAleatorio);
+        g.setColor(colorAleatorio); //El fondo del circulo cambiara dependiendo de colorAleatorio
         //
         g.fillOval(100, 50, 500, 500);
         //
         g.setColor(Color.white);
         //
-        g.drawRect(110, 350, 480, 50);
+        g.drawRect(100, 350, 500, 50);
         //
-        g.fillRect(110, 350, 480, 50);
+        g.fillRect(100, 350, 500, 50);
         //
         g.setColor(Color.white);
         //
-        g.drawRect(200,50, 100, 490);
+        g.drawRect(200,55, 100, 490);
         //
-        g.fillRect(200, 50, 100, 490);
+        g.fillRect(200, 55, 100, 490);
     } 
 
 
