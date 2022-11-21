@@ -1,6 +1,8 @@
 package arregloconjoptionpane;
 
 import java.awt.Color;
+import java.awt.Font;
+import static java.awt.Font.PLAIN;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import java.awt.Graphics;
@@ -39,6 +41,10 @@ public Microsoft (){
         g.drawRect(350, 300, 200, 200);
         //
         g.fillRect (350, 300, 200, 200);
+        //
+        g.setColor(Color.BLACK); //Imprime el texto abajo de los cuadrados
+        g.setFont(new Font("Serif",PLAIN,64));
+        g.drawString("M i c r o s o f t", 140, 600);
     } 
     
     public static void main (String[]args){
